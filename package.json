@@ -8,7 +8,8 @@
   "private": false,
   "scripts": {
     "build": "microbundle     -i main.js -f umd --name salviniblocker -o dist --inline all",
-    "dev": "microbundle watch -i main.js -f umd --name salviniblocker -o dist --inline all"
+    "dev": "microbundle watch -i main.js -f umd --name salviniblocker -o dist --inline all",
+    "pre-release": "rm -rf node_modules && npm version patch"
   },
   "devDependencies": {
     "microbundle": "^0.9.0"
