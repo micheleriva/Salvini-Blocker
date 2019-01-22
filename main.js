@@ -24,14 +24,15 @@ function disableSalveenee() {
     
     const newImage = (node) => `https://images.pexels.com/photos/127028/pexels-photo-127028.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=${node.clientWidth || 400}&h=${node.clientHeight || 250}`
 
-    if(node.src) {
+    if (node.src) {
       node.src = newImage(node)
-    } else if (node.srcset) {
+    }
+    
+    if (node.srcset) {
       node.srcset = newImage(node)
     }
 
   }
-
 }
 
 document.onload(disableSalveenee())
