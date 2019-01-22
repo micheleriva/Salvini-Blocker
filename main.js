@@ -1,17 +1,21 @@
-(function disableSalveenee() {
+function disableSalveenee() {
+
+  const regexp = new RegExp("salvini", "gi")
 
   const imgTag    = document.querySelectorAll("img")
   const sourceTag = document.querySelectorAll("source")
   const filteredImages = []
 
   for (let image of imgTag) {
-    if (image.outerHTML.match(/salvini/gi)) {
+    if (image.outerHTML.match(regexp) 
+    || image.src.match(regexp)
+    || image.alt.match(regexp)) {
       filteredImages.push(image)
     }
   }
 
   for (let image of sourceTag) {
-    if (image.outerHTML.match(/salvini/gi)) {
+    if (image.outerHTML.match(regexp)) {
       filteredImages.push(image)
     }
   }
@@ -28,4 +32,7 @@
 
   }
 
-})()
+}
+
+document.onload(disableSalveenee())
+document.addEventListener('DOMNodeInserted', disableSalveenee);
