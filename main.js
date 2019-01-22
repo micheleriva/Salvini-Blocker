@@ -35,5 +35,5 @@ function disableSalveenee() {
   }
 }
 
-document.onload(disableSalveenee())
-document.addEventListener('DOMNodeInserted', disableSalveenee);
+document.addEventListener("load", disableSalveenee);
+document.addEventListener("DOMNodeInserted", disableSalveenee);
