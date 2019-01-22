@@ -1,0 +1,16 @@
+{
+  "name": "salviniblocker",
+  "version": "0.0.1",
+  "description": "Non ce la faccio più a vedere il faccione di Salvini ogni giorno. Basta.",
+  "main": "index.js",
+  "author": "Michele Riva <wimm@micheleriva.it>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "microbundle     -i main.js -f umd --name salviniblocker -o dist --inline all",
+    "dev": "microbundle watch -i main.js -f umd --name salviniblocker -o dist --inline all"
+  },
+  "devDependencies": {
+    "microbundle": "^0.9.0"
+  }
+}
