@@ -8,7 +8,7 @@
 
 # Installation
 
-**SalviniBlocker** is on review at the Google Chrome store. I'll update this sectiona as soon as it will be approved!
+Install Salvini-Blocker from the [Chrome Web Store](https://chrome.google.com/webstore/detail/salvini-blocker/bgceopfkpahkhabbcjegjmanckmmdlde), it's free!
 
 # License
 [MIT](/LICENSE.md)
