@@ -22,8 +22,8 @@ function disableSalveenee() {
 
   for (let node of filteredImages) {
     
-    const newImage = (node) => `https://images.pexels.com/photos/127028/pexels-photo-127028.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=${node.clientWidth || 400}&h=${node.clientHeight || 250}`
-
+    const newImage = (node) => `https://cataas.com/cat?width=${node.clientWidth || 400}&height=${node.clientHeight || 250}`
+    
     if (node.src) {
       node.src = newImage(node)
     }
