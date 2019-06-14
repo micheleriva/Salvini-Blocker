@@ -7,7 +7,8 @@ function disableSalveenee() {
   const filteredImages = []
 
   for (let image of imgTag) {
-    if (image.outerHTML.match(regexp) 
+    if (image.outerHTML.match(regexp)
+    || image.baseURI.match(regexp)
     || image.src.match(regexp)
     || image.alt.match(regexp)) {
       filteredImages.push(image)

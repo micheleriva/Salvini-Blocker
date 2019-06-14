@@ -2,7 +2,7 @@
   "name": "Salvini-Blocker",
   "version": "0.0.3",
   "author": "Michele Riva,",
-  "description": "Come AdBlocker, ma per Matteo Salvini.",
+  "description": "Come AdBlock, ma per Matteo Salvini.",
   "manifest_version": 3,
   "permissions": ["<all_urls>"],
   "browser_action": {
