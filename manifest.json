@@ -1,9 +1,9 @@
 {
   "name": "Salvini-Blocker",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "Michele Riva,",
-  "description": "Per tutti quelli che non ce la fanno più a vedere Salvini che si ingozza di ogni tipo di cibo ogni giorno",
-  "manifest_version": 2,
+  "description": "Come AdBlocker, ma per Matteo Salvini.",
+  "manifest_version": 3,
   "permissions": ["<all_urls>"],
   "browser_action": {
     "default_title": "Salvini-Blocker",
