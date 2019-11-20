@@ -4,7 +4,7 @@
   "author": "Michele Riva,",
   "description": "Come AdBlock, ma per Matteo Salvini.",
   "manifest_version": 2,
-  "permissions": ["<all_urls>"],
+  "permissions": ["<all_urls>", "storage"],
   "browser_action": {
     "default_title": "Salvini-Blocker",
     "default_popup": "popup.html"
